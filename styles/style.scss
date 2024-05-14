@@ -1,6 +1,32 @@
 // font sizes
+$logo-font: 2.4rem;
+$menu-item-font: 1.3rem;
 
+// fonts
+$logo-font-family: "Times New Roman", Times, serif;
 
-
-@import "color";
+///////
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+// .wrapper{
+//   max-width: 100%;
+// }
+.container {
+  max-width: 100%;
+}
+@import "colors";
 @import "global";
+@import "buttons";
+@import "slider";
+@import "menu";
+@import "cards";
+@import "welcome";
+@import "products";
+@import "clients";
+@import "contact";
+@import "footer";
+@import "responsive";

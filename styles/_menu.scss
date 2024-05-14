@@ -1,0 +1,63 @@
+.main-head {
+  display: flex;
+  min-height: 10vh;
+  flex-direction: column;
+  //   width: 95%;
+  //   margin: auto;
+  //   position: relative;
+  position: sticky;
+  top: -14%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+.header-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem 0;
+  h1 {
+    margin-left: 1rem;
+    font-size: $logo-font;
+  }
+  h1 a {
+    color: $company-color;
+    text-decoration: none;
+    font-family: $logo-font-family;
+    font-style: italic;
+    font-size: $logo-font;
+  }
+  img {
+    width: 7rem;
+  }
+}
+
+.main-menu {
+  background: $primary-color;
+  width: 100%;
+  ul {
+    max-width: 70%;
+
+    min-height: 9.1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    a {
+      padding: 1.7rem 5rem;
+
+      text-decoration: none;
+      color: white;
+      font-size: $menu-item-font;
+      font-weight: bold;
+
+      &:hover {
+        background: $hover-color;
+      }
+    }
+  }
+  .sub-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.welcome {
+  position: static;
+  margin-top: 10%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  .welcome-image {
+    flex: 1 1 40rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .welcome-message {
+    flex: 1 1 40rem;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 3rem;
+
+    h4 {
+      font-size: 1.8rem;
+      padding: 6rem 0 1rem 0;
+      color: $company-color;
+    }
+    h2 {
+      font-size: 4rem;
+      padding: 0 0 1.5rem 0;
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 0 0 1.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.slider {
+  min-height: 90vh;
+  .slide {
+    height: 80vh;
+    padding: 7rem 5rem;
+
+    // margin: 5rem;
+    h2 {
+      font-size: 5rem;
+      margin-bottom: 2.5rem;
+      color: #3b4f25;
+    }
+    p {
+      font-size: 1.4rem;
+      display: block;
+      color: #464745;
+      max-width: 50%;
+    }
+    .button {
+      margin-top: 2.5rem;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.clients {
+  padding-top: 6rem;
+  min-height: 100vh;
+  padding-bottom: 7rem;
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 6rem;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 10rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    li{
+        flex: 1;
+    }
+  }
+}

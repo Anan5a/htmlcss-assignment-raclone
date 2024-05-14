@@ -1,0 +1,22 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #070b3b;
+    background-image: url("/images/project-bg.png");
+    background-position: top;
+    background-size: cover;
+    h2{
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        margin-top: 5rem;
+    }
+}
