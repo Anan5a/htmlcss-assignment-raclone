@@ -20,3 +20,8 @@ body {
 .active {
   background: $hover-color;
 }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}

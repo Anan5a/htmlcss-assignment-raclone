@@ -22,12 +22,13 @@
   }
   .main-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     .footer-box {
-      padding: 2rem 5rem;
-      flex: 1 1 20rem;
+      // padding: 2rem 5rem;
+      margin: 1rem 0;
+      flex: 1 1 10rem;
     }
     div {
       h2 {

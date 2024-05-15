@@ -32,33 +32,47 @@
     <!-- header menu -->
     <header class="main-head">
       <div class="header-icon margin-15">
-        <img src="/images/logo.png" alt="logo" />
+        <img
+          src="/images/logo.png"
+          alt="logo"
+          style="align-items: flex-start"
+        />
         <h1><a href="/">RANDOM ACCESS</a></h1>
       </div>
 
       <nav class="main-menu">
-        <ul class="margin-15">
-          <li>
-            <a href="/" class="active">
-              <i class="fa-solid fa-house-chimney"></i> HOME</a
-            >
-          </li>
-          <li><a href="">SERVICE</a></li>
-          <li><a href="">PRODUCTS</a></li>
-          <li>
-            <a href="">SUPPORT</a>
-            <!-- <ul class="sub-menu">
-              <li><a href="">MyCity Portal </a></li>
-              <li><a href="">Scheduler or Event Management</a></li>
-              <li><a href="">Inspection App</a></li>
-              <li><a href="">CMS</a></li>
-              <li><a href="">Open IT</a></li>
-              <li><a href="">Form Designer</a></li>
-            </ul> -->
-          </li>
-
-          <li><a href="">CONTACT US</a></li>
-        </ul>
+        <div class="container menu-container">
+          <div class="mobile-container">
+            <h1 id="logo-mobile">RANDOM ACCESS</h1>
+            <div class="burger">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+          </div>
+          <ul class="margin-15 nav-links">
+            <li class="active">
+              <a href="/"> <i class="fa-solid fa-house-chimney"></i> HOME</a>
+            </li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li class="has-submenu">
+              <div>
+                <a href="">SUPPORT &nbsp;</a
+                ><i class="fa-solid fa-chevron-down activate-dropdown"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a href="">MyCity Portal </a></li>
+                <li><a href="">Scheduler or Event Management</a></li>
+                <li><a href="">Inspection App</a></li>
+                <li><a href="">CMS</a></li>
+                <li><a href="">Open IT</a></li>
+                <li><a href="">Form Designer</a></li>
+              </ul>
+            </li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="slider">
@@ -71,12 +85,14 @@
           background-size: cover;
         "
       >
-        <h2>Random Access</h2>
-        <p>Enhance your technology Integration Possibilities with Us</p>
-        <a class="button">View Services</a>
+        <div class="container">
+          <h2>Random Access</h2>
+          <p>Enhance your technology Integration Possibilities with Us</p>
+          <a class="button">View Services</a>
+        </div>
       </div>
 
-      <!-- <div
+      <div
         class="slide"
         style="
           background: url('images/slide2.jpg');
@@ -85,13 +101,15 @@
           background-size: cover;
         "
       >
-        <h2>Inspection App</h2>
-        <p>
-          Inspection is our android and iOS based application for
-          construction, repair or any other kind of inspection purpose. It can
-          directly navigate to the site using this app.
-        </p>
-        <a class="button">View Product</a>
+        <div class="container">
+          <h2>Inspection App</h2>
+          <p>
+            Inspection is our android and iOS based application for
+            construction, repair or any other kind of inspection purpose. It can
+            directly navigate to the site using this app.
+          </p>
+          <a class="button">View Product</a>
+        </div>
       </div>
       <div
         class="slide"
@@ -102,17 +120,22 @@
           background-size: cover;
         "
       >
-        <h2>Web Development</h2>
-        <p>
-          We design and maintain standard front-end and back-end websites so
-          that our customers can have seamless experiences.
-        </p>
-        <a class="button">View Services</a>
-      </div> -->
+        <div class="container">
+          <h2>Web Development</h2>
+          <p>
+            We design and maintain standard front-end and back-end websites so
+            that our customers can have seamless experiences.
+          </p>
+          <a class="button">View Services</a>
+        </div>
+      </div>
+
+      <a class="prev" href="#" onclick="showSlide(-1)" tabindex="0">&laquo;</a>
+      <a class="next" href="#" onclick="showSlide(1)" tabindex="1">&raquo;</a>
     </section>
 
-    <div class="container">
-      <section class="info-cards margin-15">
+    <div class="">
+      <section class="info-cards margin-15 container">
         <div class="card c1">
           <div class="info">
             <a href=""><img src="/images/icon-1.png" alt="" /></a>
@@ -133,7 +156,6 @@
             </p>
           </div>
         </div>
-
         <div class="card c3">
           <div class="info">
             <a href=""><img src="/images/icon-3.png" alt="" /></a>
@@ -145,7 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="welcome margin-15">
+      <section class="welcome margin-15 container">
         <div class="welcome-image">
           <img src="/images/service.jpg" alt="" />
         </div>
@@ -168,7 +190,7 @@
       </section>
 
       <section class="products">
-        <div class="margin-15">
+        <div class="margin-15 container">
           <h2>OUR PRODUCTS</h2>
           <div class="services">
             <div class="service-box">
@@ -260,7 +282,7 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section class="clients container">
         <h2>OUR CLIENT</h2>
         <ul>
           <li>
@@ -268,20 +290,12 @@
               href="https://www.cambridge.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo1.png"
-                alt="City of Cambridge"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo1.png" alt="City of Cambridge"
             /></a>
           </li>
           <li>
             <a href="https://guelph.ca" target="_blank" rel="noopener"
-              ><img
-                src="/images/client-logo2.png"
-                alt="City of Guelph"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo2.png" alt="City of Guelph"
             /></a>
           </li>
           <li>
@@ -289,11 +303,7 @@
               href="https://www.caledon.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo3.png"
-                alt="Town of Caledon"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo3.png" alt="Town of Caledon"
             /></a>
           </li>
           <li>
@@ -301,11 +311,7 @@
               href="https://www.kitchener.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo4.png"
-                alt="City of Kitchener"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo4.png" alt="City of Kitchener"
             /></a>
           </li>
           <li>
@@ -313,11 +319,7 @@
               href="https://www.whitby.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo5.png"
-                alt="Town of Whitby"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo5.png" alt="Town of Whitby"
             /></a>
           </li>
           <li>
@@ -325,11 +327,7 @@
               href="https://www.thunderbay.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo6.png"
-                alt="City of Thunder Bay"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo6.png" alt="City of Thunder Bay"
             /></a>
           </li>
           <li>
@@ -337,20 +335,12 @@
               href="https://www.markham.ca/wps/portal/home"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo7.png"
-                alt="City of Markham"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo7.png" alt="City of Markham"
             /></a>
           </li>
           <li>
             <a href="https://bellevuewa.gov" target="_blank" rel="noopener"
-              ><img
-                src="/images/client-logo8.png"
-                alt="City of Bellevue"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo8.png" alt="City of Bellevue"
             /></a>
           </li>
           <li>
@@ -358,20 +348,12 @@
               href="https://www.pickering.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo9.png"
-                alt="City of Pickering"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo9.png" alt="City of Pickering"
             /></a>
           </li>
           <li>
             <a href="https://www.oakville.ca" target="_blank" rel="noopener"
-              ><img
-                src="/images/client-logo10.png"
-                alt="City of Oakville"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo10.png" alt="City of Oakville"
             /></a>
           </li>
           <li>
@@ -379,11 +361,7 @@
               href="https://www.vaughan.ca/Pages/Home.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo11.png"
-                alt="City of Vaughan"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo11.png" alt="City of Vaughan"
             /></a>
           </li>
           <li>
@@ -394,8 +372,6 @@
               ><img
                 src="/images/client-logo12.svg"
                 alt="City of St. Catharines"
-                width="370"
-                height="120"
             /></a>
           </li>
           <li>
@@ -403,11 +379,7 @@
               href="https://www.peterborough.ca/en/index.aspx"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/client-logo13.png"
-                alt="City of Peterbrough"
-                width="370"
-                height="120"
+              ><img src="/images/client-logo13.png" alt="City of Peterbrough"
             /></a>
           </li>
           <li>
@@ -418,8 +390,6 @@
               ><img
                 src="/images/ajaxlogo_20220404024546-CF8FE4.png"
                 alt="Town of Ajax"
-                width="370"
-                height="120"
             /></a>
           </li>
           <li>
@@ -427,17 +397,11 @@
               ><img
                 src="/images/logo-yukon_20220716024526-E9BB25.svg"
                 alt="Government of Yukon"
-                width="370"
-                height="120"
             /></a>
           </li>
           <li>
             <a href="https://www.mykingston.ca/" target="_blank" rel="noopener"
-              ><img
-                src="/images/Kingston_20240211032821-0F05B2.png"
-                alt=""
-                width="370"
-                height="120"
+              ><img src="/images/Kingston_20240211032821-0F05B2.png" alt=""
             /></a>
           </li>
           <li>
@@ -445,11 +409,7 @@
               href="https://cleanwaterservices.org/"
               target="_blank"
               rel="noopener"
-              ><img
-                src="/images/CleanWater_20240211034150-5B450A.png"
-                alt=""
-                width="370"
-                height="120"
+              ><img src="/images/CleanWater_20240211034150-5B450A.png" alt=""
             /></a>
           </li>
         </ul>
@@ -466,58 +426,62 @@
 
     <footer class="footer">
       <div class="margin-15">
-        <div class="main-footer">
-          <div class="footer-box">
-            <h2>Contact us</h2>
-            <p>207-69 Lebovic Ave. <br />Scarborough ON M1L 0H2</p>
-            <br />
-            <p><strong>Email :</strong> info@randomaccessinc.com</p>
-            <p><strong>Phone :</strong> +1-877-287-3899</p>
-          </div>
-          <div class="footer-box">
-            <h2>Quick Links</h2>
-            <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/Services">Service</a></li>
-              <li><a href="/Support">Support</a></li>
-              <li><a href="/ContactUs">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-box">
-            <h2>Service</h2>
-            <ul>
-              <li>
-                <a href="/Services#ra-applicationdevelopment"
-                  >Application Development
-                </a>
-              </li>
-              <li>
-                <a href="/Services#ra-migrationservices">Migration Services </a>
-              </li>
-              <li>
-                <a href="/Services#ra-applicationdevelopment"
-                  >Web Development
-                </a>
-              </li>
-              <li>
-                <a href="/Services#ra-mobileappdevelopment"
-                  >Mobile Application</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-box">
-            <h2>Products</h2>
-            <ul>
-              <li><a href="/Products/MyCity-Portal">MyCity Portal</a></li>
-              <li>
-                <a href="/Products/Scheduler-Or-Event-Management"
-                  >Scheduler/Event Managemen</a
-                >
-              </li>
-              <li><a href="/Products/Inspection-App">Inspection App </a></li>
-              <li><a href="/Products/CMS">CMS</a></li>
-            </ul>
+        <div class="container">
+          <div class="main-footer">
+            <div class="footer-box">
+              <h2>Contact us</h2>
+              <p>207-69 Lebovic Ave. <br />Scarborough ON M1L 0H2</p>
+              <br />
+              <p><strong>Email :</strong> info@randomaccessinc.com</p>
+              <p><strong>Phone :</strong> +1-877-287-3899</p>
+            </div>
+            <div class="footer-box">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/Services">Service</a></li>
+                <li><a href="/Support">Support</a></li>
+                <li><a href="/ContactUs">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h2>Service</h2>
+              <ul>
+                <li>
+                  <a href="/Services#ra-applicationdevelopment"
+                    >Application Development
+                  </a>
+                </li>
+                <li>
+                  <a href="/Services#ra-migrationservices"
+                    >Migration Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/Services#ra-applicationdevelopment"
+                    >Web Development
+                  </a>
+                </li>
+                <li>
+                  <a href="/Services#ra-mobileappdevelopment"
+                    >Mobile Application</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h2>Products</h2>
+              <ul>
+                <li><a href="/Products/MyCity-Portal">MyCity Portal</a></li>
+                <li>
+                  <a href="/Products/Scheduler-Or-Event-Management"
+                    >Scheduler/Event Managemen</a
+                  >
+                </li>
+                <li><a href="/Products/Inspection-App">Inspection App </a></li>
+                <li><a href="/Products/CMS">CMS</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -527,5 +491,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

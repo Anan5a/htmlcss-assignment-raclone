@@ -1,8 +1,15 @@
 .slider {
   min-height: 90vh;
+  position: relative;
   .slide {
-    height: 80vh;
+    height: 90vh;
     padding: 7rem 5rem;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    // transform: translate(-50%, -50%);
 
     // margin: 5rem;
     h2 {
@@ -20,5 +27,31 @@
       margin-top: 2.5rem;
       display: inline-block;
     }
+  }
+
+  .prev,
+  .next {
+    padding: 2rem;
+    background: $gray-text;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.1;
+    transform: translateY(-50% );
+    &:hover{
+      opacity: 0.6;
+      transition: all 0.5s ease-in;
+    }
+  }
+
+  .prev {
+    content: "<";
+    left: 0;
+  }
+  .next {
+    content: ">";
+    right: 0;
   }
 }
